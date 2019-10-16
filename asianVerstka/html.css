@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css.css" rel="stylesheet">
+</head>
+<body>
+<div class = "content">
+  <header>
+           <nav>
+      <ul class = "main-nav">
+        <li>Ваш город - Тут</li>
+        <li><a href = "#">Предложить</a></li>
+        
+        <li><a href = "#">Связаться с нами</a></li>
+        <li><a href = "#">О нас</a></li>
+      </nav>
+  </header>
+ 
+    <div class="description">
+      <strong>Описание</strong>
+      <div class = "textDescription">внизу пока просто 1пикча</div>
+      <img src = "https://i.pinimg.com/originals/63/98/57/63985775bcdebd971c4c800a44b1729c.jpg">
+</div>
+    <div class="guide">
+      <strong>Гайд<br></strong>
+      <div class = "textGuide"><br>воат так уотвоат так уотвоат так уотвоат так уотвоат так уотвоат так уотвоат так уотвоат так уотвоат так уотвоат так уотвоат так уот</div>
+      <div class = "videoGuide">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/P9gSZBxv8xw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+     
+</div>
+      <ul class = "help">
+        <button class="clickButton">Вам нужно оборудование?</button>
+        <button class = "clickButton">Нужна компания?</button>
+</div>
+    <div class="hard">
+     
+      <div class = "textGuide"><strong>Уже умеете? Вот несколько упражнений!</strong><br>воат так уотвоат так уотвоат так уотвоат так уотвоат так уотвоат так уотвоат так уотвоат так уотвоат так уотвоат так уотвоат так уотвоат так уотвоат так уотвоат так уотвоат так уотвоат так уот</div>
+      <img src = "https://pp.userapi.com/RaBvs6I9HcjLLlmwdLpcigvSXd34fMTnGOjruw/JqIvqyKa-UQ.jpg">
+</div>
+</div>
+<footer class = "footer">
+footer
+</footer>
+</body>
+</html>
