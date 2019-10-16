@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset="UTF-8"/>
+                <title>чэллэнджме.ком.предложка</title>
+                
+        
+<style>
+.main-nav{
+  margin:0;
+  padding:0;
+  list-style:none;
+  display: flex;
+  justify-content: center;
+}
+.main-nav li a{
+  text-decoration: none; 
+  color: white;
+}
+
+.main-nav li {
+  background-color: #6A51B1;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding:20px;
+}
+    body{
+      background-size: 100%;
+      background-image:url(images/back.jpg) ;
+    }
+#page {
+  display: grid;
+  margin-top: 10%;
+  margin-left: 35%;
+  width: 600px;
+  height: 100%;
+  grid-template-areas: " head head head head"
+                       "nav     main main main"
+                       "nav  foot foot foot";
+  grid-template-rows: 50px 1fr 30px;
+  grid-template-columns: 150px 1fr;
+}
+
+#page > header {
+  grid-area: head;
+  color: white;
+}
+
+#page > nav {
+  grid-area: nav;
+  color: white;
+}
+
+#page > main {
+  grid-area: main;
+  color: white;
+}
+
+#page > footer {
+  grid-area: foot;  
+  color: white;
+}
+</style>
+<header>
+  <nav>
+    <ul class="main-nav">
+      <li><a href="page1.html">Ваш челлендж</a></li>
+      <li><a href="#">Предложить</a></li>
+      <li><a href="#">Связаться с нами</a></li>
+      <li><a href="#">О нас</a></li>
+  </nav>
+</header>
+</head>
+
+<body>
+<form>
+<section id="page">
+        <header><div class="form-group">
+                <label for="exampleFormControlInput1">Ваша почта</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+        </header>
+
+        <nav> <div class="form-group">
+                <label for="exampleFormControlSelect1">Категория вашего увлечения</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                </select></div>
+        </nav>
+
+        <main> <div class="form-group">
+                <label for="exampleFormControlTextarea1">Описание вашего увлечения</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" cols = "60" rows="6"></textarea>
+              </div>
+        </main>
+
+        <footer>
+            <input type = "submit" id = "buttonUpload">
+        </footer>
+      </section>
+
+      <script> function upload(){
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+      } </script>
+</form>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
