@@ -1,137 +1,104 @@
 <!DOCTYPE html>
 <html>
-        <head>
-                <meta charset="UTF-8"/>
-                <title>чэллэнджме.ком.предложка</title>
-                
-        
-<style>
-.main-nav{
-  margin:0;
-  padding:0;
-  list-style:none;
-  display: flex;
-  justify-content: center;
-}
-.main-nav li a{
-  text-decoration: none; 
-  color: white;
-}
 
-.main-nav li {
-  background-color: #6A51B1;
-  color: white;
-  text-decoration: none;
-  display: block;
-  padding:20px;
-}
-    body{
-      background-size: 100%;
-      background-image:url(images/back.jpg) ;
-    }
-#page {
-  display: grid;
-  margin-top: 10%;
-  margin-left: 35%;
-  width: 600px;
-  height: 100%;
-  grid-template-areas: " head head head head"
-                       "nav     main main main"
-                       "nav  foot foot foot";
-  grid-template-rows: 50px 1fr 30px;
-  grid-template-columns: 150px 1fr;
-}
+<head>
+    <meta charset="UTF-8" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link href="globalCSS.css" rel="stylesheet">
 
-#page > header {
-  grid-area: head;
-  color: white;
-}
-
-#page > nav {
-  grid-area: nav;
-  color: white;
-}
-
-#page > main {
-  grid-area: main;
-  color: white;
-}
-
-#page > footer {
-  grid-area: foot;  
-  color: white;
-}
-</style>
-<header>
-  <nav>
-    <ul class="main-nav">
-      <li><a href="page1.html">Ваш челлендж</a></li>
-      <li><a href="#">Предложить</a></li>
-      <li><a href="#">Связаться с нами</a></li>
-      <li><a href="#">О нас</a></li>
-  </nav>
-</header>
 </head>
 
 <body>
-<form>
-<section id="page">
-        <header><div class="form-group">
-                <label for="exampleFormControlInput1">Ваша почта</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-              </div>
-        </header>
+    <div class="content">
+        <header>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="page1.html">Ваш челлендж</a></li>
+                    <li><a href="page4.html">Предложить</a></li>
+                    <li><a href="#">Связаться с нами</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="page5.html">Регистрация</a></li>
 
-        <nav> <div class="form-group">
-                <label for="exampleFormControlSelect1">Категория вашего увлечения</label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
-                  <option>7</option>
-                  <option>8</option>
-                  <option>9</option>
-                  <option>10</option>
+            </nav>
+    </div>
+    <form class="text-center border border-light p-5 m-5" action="#!">
+
+        <p class="h4 mb-4">Предложение на добавление челленджа</p>
+
+        <div class="form-group">
+            <label for="ControlInput1">Ваша почта</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+        </div>
+        <nav>
+            <div class="form-group">
+                <label for="ControlSelect1">Категория вашего увлечения</label>
+                <select class="form-control" id="FormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
                 </select></div>
         </nav>
 
-        <main> <div class="form-group">
-                <label for="exampleFormControlTextarea1">Описание вашего увлечения</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" cols = "60" rows="6"></textarea>
-              </div>
+
+        <main>
+            <div class="form-group shadow-textarea">
+                <label for="FormControlTextarea">Описание увлечения</label>
+                <textarea id="textareaDescription" class="md-textarea form-control" rows="5"></textarea>
+            </div>
         </main>
 
-        <footer>
-            <input type = "submit" id = "buttonUpload">
-        </footer>
-      </section>
+        <main>
+            <div class="form-group shadow-textarea">
+                <label for="FormControlTextarea">Ссылка на обучающие видео </label>
+                <textarea id="textareaDescription" class="md-textarea form-control" rows="5"></textarea>
+            </div>
+        </main>
+        <main>
+            <div class="form-group shadow-textarea">
+                <label for="FormControlTextarea">Гайд</label>
+                <textarea id="textareaDescription" class="md-textarea form-control" rows="5"></textarea>
+            </div>
+        </main>
+        <main>
+            <div class="form-group shadow-textarea">
+                <label for="FormControlTextarea">Задания</label>
+                <textarea id="textareaDescription" class="md-textarea form-control" rows="5"></textarea>
+            </div>
+        </main>
 
-      <script> function upload(){
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-      } </script>
-</form>
+
+        <button class="btn btn-info my-4 btn-block" type="submit">Отправить</button>
 
 
+        <hr>
+
+
+        <p>Нажав
+            <em>Отправить,</em> вы соглашаетесь с нашими
+            <a href="" target="_blank">условиями использования</a>
+
+    </form>
 </body>
+<script>
 
-
-
-
-
-
-
-
-
-
-
+</script>
 
 </html>
