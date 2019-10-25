@@ -11,7 +11,8 @@ body {
     margin-right: auto; 
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(-85deg, #616161 0%, #96B7C4 100%);
+    /* background-image: linear-gradient(-85deg, #616161 0%, #96B7C4 100%); */
+    background-image: linear-gradient(-85deg, #939 0%,#39C 100%);
   }
   
   html {
@@ -233,20 +234,6 @@ body {
   }
 /* button settings */
 
-body {
-  
-    --def: #96B7C4; 	
-    --inv: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto; 
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(90deg, #616161 0%, #96B7C4 100%);
-  }
   
   html {
     font-size: 12px;
