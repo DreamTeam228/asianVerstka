@@ -15,17 +15,16 @@ body {
   }
   
   html {
-    font-size: 12px;
-    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-family: Palatino;
     
   }
   
   div:last-child {margin-bottom: 0;}
 /* navi settings */
 .main-nav{
-    
+    font-family: Palatino;
     border-bottom: 2px solid currentColor;
-  
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -40,7 +39,7 @@ body {
   }
   
   .main-nav li {
-   
+    font-family: Palatino;
     text-decoration: none;
     display: block;
     padding:20px;
@@ -61,52 +60,27 @@ body {
 
   
   .titleHobby{
-    color: bisque;
+    color: #fff;
     display: flex;
     justify-content: center;
     padding-top: 5%;
     font-size: 65px;
     line-height: 75px;
     text-align: center;
-    margin-bottom:10vh;
-    
+    font-family: Palatino;
   }
-  .slider_wrap {
-      margin:200px auto 0;
-      position: fixed;
-    width: 50%;  
-    min-height: 50vh;
-    padding-right: 10%;
-   position:relative;
-    overflow:hidden;
-   
-   
-  }
-  .slider_wrap img {
-      width:100%;
-      height:auto;
-      display:none;
-      position:absolute;
-      top:0;
-    left:0;	
-    margin: auto 0;
-    
-  }
-  .slider_wrap img:first-child {
-      display:block;
-  }
-  
+
   header{
     display:flex;
     justify-content: center;
   }
   .description{
-    min-height: 100vh;
+    padding-top: 15%;
+    min-height: 100%;
     display:flex;
     padding-left: 10%;
     margin: 0 auto;
     text-align: left;
-    padding: 10px;
     justify-content: center;
     flex-direction: column;
     
@@ -116,8 +90,11 @@ body {
     align-content: center;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 18px;
+    font-family: Palatino;
+    font-size: 24px;
+    line-height: 21px;
+    color: #000000;
+    padding-bottom: 5%;
   }
   .guide{
     display:flex;
@@ -129,11 +106,12 @@ body {
    
   }
   .textGuide{
-    
+    font-family: Palatino;
+    font-size: 24px;
+    line-height: 21px;
+    color: #000000;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 18px;
     padding-bottom: 5%;
     padding-right: 5%;
     
@@ -157,23 +135,20 @@ body {
 [ FONT ]*/
 
 @font-face {
-  font-family: Poppins-Regular;
-  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+  font-family: Palatino;
+  
 }
 
 @font-face {
-  font-family: Poppins-Medium;
-  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+  font-family: Palatino;
 }
 
 @font-face {
-  font-family: Poppins-Bold;
-  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+  font-family: Palatino;
 }
 
 @font-face {
-  font-family: Poppins-SemiBold;
-  src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
+  font-family: Palatino;
 }
 
 
@@ -534,8 +509,8 @@ iframe {
 }
 
 .login100-form-btn {
-  font-family: Poppins-Medium;
-  font-size: 15px;
+  font-family: Palatino;
+  font-size: 21px;
   color: #fff;
   line-height: 1.2;
   text-transform: uppercase;
@@ -639,4 +614,34 @@ iframe {
 }
 
 
-
+.textGuide2{
+  padding-top: 5%;
+}
+.textDescription2{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  transform: translateX(15%);
+  }
+  .slider_wrap {
+    position: fixed;
+    width: 50%;  
+    min-height: 50vh;
+    padding-right: 45%;
+     position:relative;
+    overflow:hidden;
+ 
+ 
+}
+.slider_wrap img {
+    width:100%;
+    height:auto;
+    display:none;
+    position:absolute;
+    top:0;
+  left:0;	
+  margin: auto 0;
+  
+}
+.slider_wrap img:first-child {
+    display:block;
+}

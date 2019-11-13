@@ -4,29 +4,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <!--  -->
-    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
   <!--  -->
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
   <!--  -->
-    <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
   <!--  -->
-    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-  <!--  -->	
-    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+  <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
   <!--  -->
-    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+  <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
   <!--  -->
-    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-  <!--  -->	
-    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+  <!--  -->
+  <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+  <!--  -->
+  <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
   <!--  -->
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <!--  -->
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <!--  -->
   <link href="css/mainCSS.css" rel="stylesheet">
+  <!--  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <!--  -->
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <!--  -->
+  <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider({
+        minSlides: 1, // Это минимальное количество слайдов
+        maxSlides: 3, // Это максимальное количество слайдов
+        slideWidth: 258 // Ширина одного слайда
+      });
+    });
+    </script>
+  <!--  -->
 </head>
 
 <body>
@@ -46,91 +60,103 @@
 
     <div class="titleHobby">Катание на роликах</div>
     <div class="description">
-      <div class="textDescription"><strong>Описание</strong><br><br>Данный вид спорта появился в 1990-е годы, но быстро
-        приобрел популярность среди детей, молодежи и более взрослых людей. Поклонников катания на роликовых коньках с
-        каждым годом становится все больше. Появились разные виды — фристайл, хоккей, скоростной бег на роликах и даже
-        командное катание.</div>
-      <div id="slider" class="slider_wrap">
-        <img src="images/slider_image1.jpg" alt="" />
-        <img src="images/slider_image2.jpg" alt="" />
-        <img src="images/slider_image3.jpg" alt="" />
-      </div>
-    </div>
-
-    <div>
-
-    
-  
-      <div class="guide">
-
-        <div class="textGuide"><strong>Гайд</strong><br><br>При движении одну ногу надо ставить вперед под углом,
-          скользя на
-          ней и отталкиваясь другой. Затем производить такое же движение второй ногой, при этом вес туловища переносить
-          на нее. Необходимо совершать движения ногами вперед-назад, не отрывая их от асфальта и удерживая центр тяжести
-          строго по середине корпуса. Одним из важных навыков, которые необходимо освоить в первый же день, — это умение
-          тормозить. Существует несколько способов это сделать: - резко поставить один ботинок перпендикулярно другому,
-          при таком движении колесики перестанут крутиться и остановятся; - при движении одну ногу вывести назад и
-          приставить к другой буквой «Т», перенося тяжесть тела вперед; - при медленном скольжении можно поставить обе
-          ноги под углом, стараясь свести носки буквой «V». Вы также можете посмотреть обучающее видео:</div>
-        <div class="videoGuide">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/AIBFxKRlgE4" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="textDescription"><strong>Описание</strong><br><br>Данный вид спорта появился в 1990-е годы, но быстро
+          приобрел популярность среди детей, молодежи и более взрослых людей. Поклонников катания на роликовых коньках с
+          каждым годом становится все больше. Появились разные виды — фристайл, хоккей, скоростной бег на роликах и даже
+          командное катание.
+      <div class="textDescription2">
+        <div class="slider">
+          <div><img src="images/slider1.jpg" alt=""></div>
+          <div><img src="images/slider2.jpg" alt=""></div>
+          <div><img src="images/slider3.jpg" alt=""></div>
         </div>
-
       </div>
-      <ul class="help">
       
-            <div class="container-login100-form-btn">
-                    <div class="wrap-login100-form-btn">
-                        <div class="login100-form-bgbtn"></div>
-                        <button class="login100-form-btn">
-                            Вам нужна экипировка?
-                        </button>
-                    </div>
-                </div>
-                <div class="container-login100-form-btn">
-						<div class="wrap-login100-form-btn">
-							<div class="login100-form-bgbtn"></div>
-							<button class="login100-form-btn">
-								Вам нужна компания?
-							</button>
-						</div>
-					</div>
+   
+      
+      <div>
+        <div class="guide">
 
-        </a>
-    </div>
-    <div class="hard">
+          <div class="textGuide"><strong>Гайд</strong><br><br>При движении одну ногу надо ставить вперед под углом,
+            скользя на
+            ней и отталкиваясь другой. Затем производить такое же движение второй ногой, при этом вес туловища
+            переносить
+            на нее. Необходимо совершать движения ногами вперед-назад, не отрывая их от асфальта и удерживая центр
+            тяжести
+            строго по середине корпуса. Одним из важных навыков, которые необходимо освоить в первый же день, — это
+            умение
+            тормозить. Существует несколько способов это сделать: - резко поставить один ботинок перпендикулярно
+            другому,
+            при таком движении колесики перестанут крутиться и остановятся; - при движении одну ногу вывести назад и
+            приставить к другой буквой «Т», перенося тяжесть тела вперед; - при медленном скольжении можно поставить обе
+            ноги под углом, стараясь свести носки буквой «V». Вы также можете посмотреть обучающее видео:</div>
+            <div class ="textGuide2"><iframe width="560" height="315" src="https://www.youtube.com/embed/AIBFxKRlgE4" frameborder="0" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+             <!-- <div style="width:200px;margin:0 auto"><iframe width="560" height="315" src="https://www.youtube.com/embed/AIBFxKRlgE4" frameborder="0" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> -->
 
-      <div class="textGuide"><strong>Уже умеете? Вот несколько упражнений!</strong><br>
-        <br>1. Подпрыгивание на 2-х ногах, отталкиваясь сразу 8-ю колесиками роликов. Нужно следить за наклоном тела
-        вперед и не переносить вес на передние колеса. При приземлении одну ногу надо вывести на полролика вперед, чтобы
-        не потерять равновесие. 2. Перепрыгивание с одной ноги на другую. Во время приземления опорную ногу нужно
-        сгибать в коленях. 3. Повороты. Выставите вперед ту ногу, в сторону которой собираетесь повернуться. Делается
-        небольшой шаг, причем пятка передней ноги должна стоять напротив носка задней. Нажимая на внешнюю сторону колес
-        и двигаясь, поворачивайтесь туловищем в нужную сторону. 4. Змейка позволяет научиться делать повороты. Нужно
-        расставить пластиковые стаканчики с интервалом 1,5 м по одной линии. Разогнавшись, попробовать объехать каждый,
-        огибая их зигзагом. 5. Лабиринт — более сложное упражнение, при котором стаканчики надо расставлять по всей
-        площадке на расстоянии 2-3 м. При катании их нужно объезжать, делая повороты, развороты и зигзаги.<br>
+        </div>
+        
+        <ul class="help">
+
+          <div class="container-login100-form-btn">
+            <div class="wrap-login100-form-btn">
+              <div class="login100-form-bgbtn"></div>
+              <button class="login100-form-btn">
+                Вам нужна экипировка?
+              </button>
+            </div>
+          </div>
+          <div class="container-login100-form-btn">
+            <div class="wrap-login100-form-btn">
+              <div class="login100-form-bgbtn"></div>
+              <button class="login100-form-btn">
+                Вам нужна компания?
+              </button>
+            </div>
+          </div>
+
+          </a>
       </div>
-      <img src="images/hard.jpg "width="50%" height="50%">
-    </div>
+      <div class="hard">
+
+        <div class="textGuide"><strong>Уже умеете? Вот несколько упражнений!</strong><br>
+          <br>1. Подпрыгивание на 2-х ногах, отталкиваясь сразу 8-ю колесиками роликов. Нужно следить за наклоном тела
+          вперед и не переносить вес на передние колеса. При приземлении одну ногу надо вывести на полролика вперед,
+          чтобы
+          не потерять равновесие. 2. Перепрыгивание с одной ноги на другую. Во время приземления опорную ногу нужно
+          сгибать в коленях. 3. Повороты. Выставите вперед ту ногу, в сторону которой собираетесь повернуться. Делается
+          небольшой шаг, причем пятка передней ноги должна стоять напротив носка задней. Нажимая на внешнюю сторону
+          колес
+          и двигаясь, поворачивайтесь туловищем в нужную сторону. 4. Змейка позволяет научиться делать повороты. Нужно
+          расставить пластиковые стаканчики с интервалом 1,5 м по одной линии. Разогнавшись, попробовать объехать
+          каждый,
+          огибая их зигзагом. 5. Лабиринт — более сложное упражнение, при котором стаканчики надо расставлять по всей
+          площадке на расстоянии 2-3 м. При катании их нужно объезжать, делая повороты, развороты и зигзаги.<br>
+        </div>
+        <div id="slider2" class="slider_wrap">
+          <div><img src="images/slider6.jpg" alt=""></div>
+         
+        </div>
+      </div>
 
 </body>
 <!--  -->
-<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+
 <!--  -->
-	<script src="vendor/animsition/js/animsition.min.js"></script>
+<script src="vendor/animsition/js/animsition.min.js"></script>
 <!--  -->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/bootstrap/js/popper.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 <!--  -->
-	<script src="vendor/select2/select2.min.js"></script>
+<script src="vendor/select2/select2.min.js"></script>
 <!--  -->
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<script src="vendor/daterangepicker/moment.min.js"></script>
+<script src="vendor/daterangepicker/daterangepicker.js"></script>
 <!--  -->
-	<script src="vendor/countdowntime/countdowntime.js"></script>
+<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--  -->
+
 <script>
   $(function () {
     var el = $('#slider img'),
