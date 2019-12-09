@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style2.css">
+
+  <title>ChallengeMe</title>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <!--  -->
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <!--  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--  -->
+  <link type="text/css" rel="stylesheet" href="magicscroll/magicscroll.css" />
+  <!--  -->
+  <link href="../css/cssFontAwesome/all.css" rel="stylesheet">
+  <!--  -->
+</head>
+
+<body>
+
+  <div class="container-fluid header-info">
+
+    <div class="container-fluid header-layer p-3 mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-2 text-md-left">
+            <div>Ваш город - Тут</div>
+          </div>
+          <div class="col-xs-12 col-md-8 text-center">
+            <div class="logo">
+              Логотип
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-2 text-md-left">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container header-text">
+      <div class="row">
+
+        <div class="col-xs-12 col-md-7 star-layer">
+          <div class="description">О себе
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-md-8 ">
+          <div class="info"><img src="../images/avatar.jpg" width="400px" , height="300px" class="border">
+            <div class="container col-md-12">
+              <div class="row with-margin">
+                <div class="text-center col-md-6 with-margin ">
+                  Имя: Шакс
+                </div>
+                <div class="text-center col-md-6 with-margin">
+                  Город: Москва
+                </div>
+              </div>
+              <div class="row">
+                <div class="text-center col-md-6 with-margin">
+                  Ранг: Новичок
+                </div>
+                <div class="text-center col-md-6-top-buffer">
+                </div>
+              </div>
+              <div class="row col-md-6">
+                <div class="text-center col-md-4-offset-2 top-buffer">
+                  <div class="text-center col-md-12">
+                    <div class="level">12/20 звезд до следующего ранга</div>
+                  </div>
+
+                  <div class="text-center col-md-6 centered">
+                    <progress class="progress" id="progress" value="0" max="100" style="width:300px; border-radius: 15px;"></progress>
+                    <script>
+                      function getProgress() {
+                        if (document.getElementById('progress').value >= document.getElementById('progress').max) return false;
+                        document.getElementById('progress').value++;
+                        setTimeout(getProgress, 50);
+                      }
+                      getProgress();
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 header-title">
+        Мои Челленджи
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="container-fluid" style="background: #F2F2F2;">
+    <div class="container">
+
+
+
+        <div class="container text-center my-3">
+            <div class="row mx-auto my-auto">
+              <div id="myCarousel" class="carousel slide w-100" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item py-5 active">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <div class="card">
+                          <div class="card-body">
+                            <h4 class="card-title"><img src="../images/challenge1.jpg" style="height: 220px; width: 220px;"></h4>
+                            <div class="star"></div>
+                            <p class="card-text">Катание на роликах<img src="../images/Star.png" style="height: 15px; width: 15px;"></p>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card">
+                          <div class="card-body">
+                            <h4 class="card-title"><img src="../images/challenge2.jpg"style="height: 220px; width: 220px;"></h4>
+                            <p class="card-text">Оригами             <img src="../images/Star.png" style="height: 15px; width: 15px;"><img src="../images/Star.png" style="height: 15px; width: 15px;"></p>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card">
+                          <div class="card-body">
+                            <h4 class="card-title"><img src="../images/challenge3.jpg"style="height: 220px; width: 220px;"></h4>
+                            <p class="card-text">Скиппинг<img src="../images/Star.png" style="height: 15px; width: 15px;"></p>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card">
+                          <div class="card-body">
+                            <h4 class="card-title"><img src="../images/challenge4.jpg"style="height: 220px; width: 220px;"></h4>
+                            <p class="card-text">Большой теннис<img src="../images/Star.png" style="height: 15px; width: 15px;"><img src="../images/Star.png" style="height: 15px; width: 15px;"><img src="../images/Star.png" style="height: 15px; width: 15px;"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <a class="carousel-control-prev text-dark" href="#myCarousel" role="button" data-slide="prev">
+                  <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next text-dark" href="#myCarousel" role="button" data-slide="next">
+                  <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+    </div>
+  </div>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 title-layer">
+          Достижения
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+
+          <div class="col-md-6">
+            <div class="info-layer-hobby">
+
+              <div class="container text-center my-3">
+                <div class="row mx-auto my-auto">
+                  <div id="myCarousel" class="carousel slide w-100" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                      <div class="carousel-item py-5 active">
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <div class="card">
+                              <div class="card-body">
+                                <h4 class="card-title"><img src="../images/achiev1.png"></h4>
+                                <p class="card-text">Поплавать в шапочке</p>
+
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-3">
+                            <div class="card">
+                              <div class="card-body">
+                                <h4 class="card-title"><img src="../images/achiev2.png"></h4>
+                                <p class="card-text">Найти островок</p>
+
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-3">
+                            <div class="card">
+                              <div class="card-body">
+                                <h4 class="card-title"><img src="../images/achiev3.png"></h4>
+                                <p class="card-text">Прокатиться на доске для серфинга</p>
+
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-3">
+                            <div class="card">
+                              <div class="card-body">
+                                <h4 class="card-title"><img src="../images/achiev4.png"></h4>
+                                <p class="card-text">Поучаствовать в волейбольном челлендже</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <a class="carousel-control-prev text-dark" href="#myCarousel" role="button" data-slide="prev">
+                      <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next text-dark" href="#myCarousel" role="button" data-slide="next">
+                      <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+        </div>
+        <div class="col-xs-12 col-md-6">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="info-layer-hobby">
+
+            <div class="wrap-login100-form-btn info-layer-button">
+              <div class="login100-form-bgbtn"></div>
+              <div class="login100-form-btn">
+                Открыть чат
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="info-layer-hobby">
+
+            <div class="wrap-login100-form-btn info-layer-button">
+              <div class="login100-form-bgbtn"></div>
+              <div class="login100-form-btn">
+                Предложить
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!--  -->
+  <script>$('#myCarousel').carousel({
+      interval: 5000
+    })</script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
+  <script src="js/bootstrap.min.js"></script>
+  <!--  -->
+</body>
+
+</html>
